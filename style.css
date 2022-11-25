@@ -122,6 +122,7 @@ body {
   font-size: 13px;
   display: flex;
   justify-content: center;
+  background-color: var(--color-LightGrayishBlue);
 
 }
 
@@ -150,9 +151,9 @@ table {
 
 /* END CSS RESET */
 
-body * {
+/* body * {
   border: solid 1px pink;
-}
+} */
 
 
 .main {
@@ -167,12 +168,14 @@ body * {
 
 .container {
   display: flex;
-  height: 50%;
-  width: 80%;
+  height: 40%;
+  width: 65%;
   justify-content: center;
   align-items: center;
   border-radius: 12.5px;
   overflow: hidden;
+  background-color: white;
+  box-shadow: 17px 10px 43px -37px #030005;
 }
 
 .card {
@@ -185,47 +188,63 @@ body * {
 .left {
   height: 100%;
   overflow: hidden;
-  object-fit: contain;
+
+  width: 45%;
 
 }
 
 .right {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 55%;
   height: 90%;
-  width: 90%;
+  margin: 5%;
+
 }
 
 header{
  font-weight: 700;
+ font-size: 1.5rem;
+ width: 95%;
+ align-self: flex-start;
+
+;
 }
 
 main{
   font-weight: 500;
+  font-size: 1rem;
+  color: var(--color-GrayishBlue);
+ 
 }
 
 footer{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 95%;
+  align-self: flex-start;
+
 
 }
 
 .avatar > img {
   border-radius: 50%;
+  height: 3rem;
+
 }
 
 .image-name-date-container{
   display: flex;
   align-items: center;
-  height: 10%;
+  height: 5%;
 }
 .name-date-container{
   display: flex;
   flex-direction: column;
+  margin-left: 1.2rem;
 }
 
 .name {
@@ -233,7 +252,24 @@ footer{
 }
 .date {
   font-weight: 500;
+  color: var(--color-GrayishBlue);
 }
+
+.share-icon {
+  background-color: var(--color-LightGrayishBlue);
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.share-icon > img:hover {
+  filter: invert(30%);
+}
+
+
 
 .footer {
   align-self: center;
@@ -244,10 +280,11 @@ footer{
 .attribution {
   font-size: 11px;
   text-align: center;
-  color: var(--color--Slightly-transparent-white-stat-headings);
+  color: var(--color-VeryDarkGrayishBlue);
 }
 
 .attribution a {
-  color: var(--color--Soft-violet-accent);
+  color: var(--color-GrayishBlue);
   text-decoration: none;
 }
+
