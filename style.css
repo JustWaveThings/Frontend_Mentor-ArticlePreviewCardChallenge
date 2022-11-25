@@ -120,6 +120,8 @@ body {
   line-height: 1.6;
   font-family: 'Manrope', sans-serif;
   font-size: 13px;
+  display: flex;
+  justify-content: center;
 
 }
 
@@ -148,7 +150,92 @@ table {
 
 /* END CSS RESET */
 
-footer {
+body * {
+  border: solid 1px pink;
+}
+
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  max-width: 1440px;
+
+}
+
+.container {
+  display: flex;
+  height: 50%;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12.5px;
+  overflow: hidden;
+}
+
+.card {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.left {
+  height: 100%;
+  overflow: hidden;
+  object-fit: contain;
+
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 90%;
+  width: 90%;
+}
+
+header{
+ font-weight: 700;
+}
+
+main{
+  font-weight: 500;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+}
+
+.avatar > img {
+  border-radius: 50%;
+}
+
+.image-name-date-container{
+  display: flex;
+  align-items: center;
+  height: 10%;
+}
+.name-date-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-weight: 700;
+}
+.date {
+  font-weight: 500;
+}
+
+.footer {
   align-self: center;
   position: absolute;
   bottom: 15px;
