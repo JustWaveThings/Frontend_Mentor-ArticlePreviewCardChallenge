@@ -7,11 +7,12 @@
   --color-LightGrayishBlue: hsl(210, 46%, 95%);
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/*   http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
-   License: none (public domain)
-*/
+   License: none (public domain) */
 
+ 
+  
 html,
 body,
 div,
@@ -101,7 +102,8 @@ video {
   vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
+
+/*   HTML5 display-role reset for older browsers   */
 article,
 aside,
 details,
@@ -115,17 +117,8 @@ nav,
 section {
   display: block;
 }
-
-body {
-  line-height: 1.6;
-  font-family: 'Manrope', sans-serif;
-  font-size: 13px;
-  display: flex;
-  justify-content: center;
-  background-color: var(--color-LightGrayishBlue);
-
-}
-
+    
+  
 ol,
 ul {
   list-style: none;
@@ -147,105 +140,117 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
+}  
+/*
+  END CSS RESET  
+ */
 
-/* END CSS RESET */
-
-/* body * {
-  border: solid 1px pink;
-} */
-
-
-.main {
+html {
+  height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  max-width: 1440px;
 }
 
+body{
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 30%;
+
+  background-color: var(--color-LightGrayishBlue);
+}
+
+  html * {
+  border: solid 1px pink;
+}  
+
+  
 .container {
   display: flex;
-  height: 40%;
-  width: 65%;
-  justify-content: center;
-  align-items: center;
-  border-radius: 12.5px;
+  width: 45.5rem;
+  border-radius: 1rem;
   background-color: white;
   box-shadow: 17px 10px 43px -37px #030005;
-}
 
+}
 .card {
   display: flex;
   height: 100%;
-  width: 100%;
+  width: 100%;  
+  flex-shrink: 1;
 }
 
 .left {
+  overflow: hidden;
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+  flex-basis: 42%;
+}
+
+.left > img {
   height: 100%;
   overflow: hidden;
-  border-bottom-left-radius: 12.5px;
-  border-top-left-radius: 12.5px;
-  width: 45%;
+  object-fit: cover;
 
 }
 
 .right {
+  flex-basis: 57%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 55%;
-  height: 90%;
-  margin: 5%;
+  align-items: flex-start;
+  justify-content: center;
+  gap: .75rem;
+  margin: 0 1.5rem;
 
 }
 
 header{
- font-weight: 700;
- font-size: 1.5rem;
- width: 95%;
- align-self: flex-start;
-
-;
+  font-weight: 700;
+  font-size: 1.35rem;  
+  letter-spacing: .04rem;
+  color: var(--color-VeryDarkGrayishBlue);
 }
 
 main{
-  font-weight: 500;
-  font-size: 1rem;
+  font-size: .75rem;
+  letter-spacing: .02rem;
   color: var(--color-GrayishBlue);
- 
 }
+
 
 footer{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 95%;
-  align-self: flex-start;
-
- 
-
+  
 }
 
+.avatar {
+  display:flex;
+  align-items: center;
+}
 .avatar > img {
-  border-radius: 50%;
-  height: 3rem;
-
+  border-radius: 10rem;
+  height: 3.5rem;
 }
 
 .image-name-date-container{
   display: flex;
-  align-items: center;
-  height: 5%;
-}
-.name-date-container{
-  display: flex;
-  flex-direction: column;
-  margin-left: 1.2rem;
+  flex-grow: 1;
+  align-items: center; 
+  height: 5rem;
+  gap: 1.4rem;
 }
 
+.name-date-container{
+  display: flex;
+  flex-direction: column; 
+}
+/*
 .name {
   font-weight: 700;
 }
@@ -258,10 +263,10 @@ footer{
   background-color: var(--color-LightGrayishBlue);
   border-radius: 50%;
   width: 2.5rem;
-  height: 2.5rem;
+  height: 2.5rem; 
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
   position: relative;
   z-index: 0;
   cursor: pointer;
@@ -276,7 +281,7 @@ footer{
   filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(3%) hue-rotate(222deg) brightness(103%) contrast(100%);
 }
 
-/* popup */
+
 .popup {
   display: flex;
   justify-content: space-evenly;
@@ -313,9 +318,8 @@ span.popup::after {
 
 .show {
   visibility: visible;
-  /* animation: fadeIn 1s; */
 }
-
+*/
 
 .footer {
   align-self: center;
@@ -323,6 +327,7 @@ span.popup::after {
   bottom: 15px;
 }
 
+/*
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -334,3 +339,4 @@ span.popup::after {
   text-decoration: none;
 }
 
+   */
