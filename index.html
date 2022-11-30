@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
+  <script src="script.js" defer></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <link rel="stylesheet" href="style.css">
@@ -34,7 +34,11 @@
               <div class="date">28 Jun 2020</div>
             </div>
           </div>
-          <div class="share-icon"><img src="images/icon-share.svg" alt="Share to Social Media"></div>
+          <div class="share-icon" onclick="sharePopup()"> <img src="images/icon-share.svg"
+              alt="Share to Social Media"><span class="popup" id="popup">SHARE <a href="https://facebook.com"><img
+                  src="images/icon-facebook.svg" alt="icon-facebook"></a> <a href="https://www.twitter.com"><img
+                  src="images/icon-twitter.svg" alt="icon-twitter"></a> <a href="https://pinterest.com"><img
+                  src="images/icon-pinterest.svg" alt="pinterest-icon"></a></span></div>
         </footer>
       </div>
     </div>
